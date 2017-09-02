@@ -7,17 +7,79 @@
 ## How to Use in your application ? 
 
 ```markdown
-** Initialization **
+
  #include<DirectoryWatcher.hpp> 
- 'code
+ 
  int main()
  {
  DirectoryWatcher * watcher = new DirectoryWatcher();
- wathcer->Init();
+ wathcer->Init("C://Program Files//TestFolder");
  return 0;
  }
- '
+ 
  ```
+ ## Running 
+ ```code
+// preferabbly to be used inside a Tick method  that calls after ervery 0.2 seconds 
+ while(true)
+ {
+ vector<Changed_Data>* ChangedFiles;
+ bool hasChanged = false;
+   watcher->Monitor(ChangedFiles,hasChanged);
+   
+   if(hasChanged)
+   {
+     // Do something with ChanngedFiles
+   }
+ }
+ 
+ # The structs 
+ 
+struct Changed_Data
+{
+    FOLDER_META Old;
+    FOLDER_META New;
+};
+
+**Folder Meta **
+typedef Meta<string> FOLDER_META;
+
+
+template<typename T>
+struct Meta
+{
+    string Name,Path;
+    size_t GUID;
+     double Size;
+
+    // Typ 
+    // typ =0 Folder
+    //typ = -1 unknow file
+    int Type;
+
+    // Can be anything like list of name or list of animation files or list of folder with a folder
+     vector<T> MetaInfo;
+
+     friend class boost::serialization::access;
+
+     template<typename Archive>
+     void serialize(Archive & ar, const unsigned version) {
+         ar & Name;
+         ar & Path;
+         ar & GUID;
+         ar & Size;
+         ar & Type;
+         ar & MetaInfo;
+     }
+
+
+};
+
+ 
+ ```
+ 
+ 
+ 
 You can use the [editor on GitHub](https://github.com/deltamish/DirectoryWatcher/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.

@@ -1,8 +1,13 @@
 ## DirectoryWatcher V 1.0
 
 # Installation 
+#Preq
+ - Install Boost Library 
+ - Install Dirent
+ #Steps 
+- Complete Above steps first  
 - Clone the Repo in a new Folder 
- - Create a new Exlipse/Visual Studio Project Select this as Source and Mark Project as DLL or Shared Library
+- Create a new Exlipse/Visual Studio Project Select this as Source and Mark Project as DLL or Shared Library
 
 ## How to Use in your application ? 
 

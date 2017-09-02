@@ -1,12 +1,22 @@
 ## DirectoryWatcher V 1.0
-```markdown
+
 # Installation 
 - Clone the Repo in a new Folder 
  - Create a new Exlipse/Visual Studio Project Select this as Source and Mark Project as DLL or Shared Library
 
 ## How to Use in your application ? 
-- Import the DirectoryWatcher.hpp in your Main Soruce code 
- <code> #include<DirectoryWatcher.hpp> </code>
+
+```markdown
+**Initialization**
+ #include<DirectoryWatcher.hpp> 
+ 
+ int main()
+ {
+ DirectoryWatcher * watcher = new DirectoryWatcher();
+ wathcer->Init();
+ return 0;
+ }
+ ```
 You can use the [editor on GitHub](https://github.com/deltamish/DirectoryWatcher/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -31,7 +41,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 

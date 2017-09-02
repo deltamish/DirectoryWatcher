@@ -9,7 +9,7 @@
 ```markdown
 ** Initialization **
  #include<DirectoryWatcher.hpp> 
- '
+ 'code
  int main()
  {
  DirectoryWatcher * watcher = new DirectoryWatcher();
@@ -39,7 +39,7 @@ Syntax highlighted code block
 1. Numbered
 2. List
 
-**Bold** and _Italic_ and `Code` text
+**Bold** and _Italic_ and `include>?` text
 
 [Link](url) and ![Image](src)
 

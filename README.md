@@ -7,15 +7,16 @@
 ## How to Use in your application ? 
 
 ```markdown
-**Initialization**
+** Initialization **
  #include<DirectoryWatcher.hpp> 
- 
+ '
  int main()
  {
  DirectoryWatcher * watcher = new DirectoryWatcher();
  wathcer->Init();
  return 0;
  }
+ '
  ```
 You can use the [editor on GitHub](https://github.com/deltamish/DirectoryWatcher/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 

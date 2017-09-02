@@ -18,7 +18,7 @@
  }
  
  ```
- ## Running 
+ ### Running 
  ```code
 // preferabbly to be used inside a Tick method  that calls after ervery 0.2 seconds 
  while(true)
@@ -33,15 +33,18 @@
    }
  }
  
- # The structs 
+ ```
  
+  ### The structs 
+ ```code
 struct Changed_Data
 {
     FOLDER_META Old;
     FOLDER_META New;
 };
-
+```
 **Folder Meta **
+```
 typedef Meta<string> FOLDER_META;
 
 
@@ -75,9 +78,7 @@ struct Meta
 
 };
 
- 
  ```
- 
  
  
 You can use the [editor on GitHub](https://github.com/deltamish/DirectoryWatcher/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

@@ -1,5 +1,11 @@
 ## Welcome to GitHub Pages
 
+#Installation 
+### - Clone the Repo in a new Folder 
+### - Create a new Exlipse/Visual Studio Project Select this as Source and Mark Project as DLL or Shared Library
+
+## How to Use in your application ? 
+- 
 You can use the [editor on GitHub](https://github.com/deltamish/DirectoryWatcher/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.

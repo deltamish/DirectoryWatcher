@@ -1,5 +1,5 @@
-## Welcome to GitHub Pages
-
+## DirectoryWatcher V 1.0
+```markdown
 # Installation 
 - Clone the Repo in a new Folder 
  - Create a new Exlipse/Visual Studio Project Select this as Source and Mark Project as DLL or Shared Library
@@ -15,7 +15,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+
 Syntax highlighted code block
 
 # Header 1
